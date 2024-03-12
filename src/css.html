@@ -1,0 +1,103 @@
+<html>
+<head>
+	<style>
+	body {
+		background-image: url('background.jpg');
+		background-size: cover;
+	}
+	
+	#grid tr:nth-child(odd) {
+		background-color: #f4f4f4;
+	}
+	
+	#grid tr:nth-child(even) {
+		background-color: #cccccc;
+	}
+	
+	.center {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.round {
+		border-radius: 50%;
+	}
+	
+	.zoom {
+		transition: transform .2s;
+	}
+	
+	.zoom:hover {
+		transform: scale(1.2);
+	}
+	
+	
+	
+	</style>
+</head>
+<body>
+
+<div class="center">
+	<h1>  강남영화블로그</h1>
+	<h3> 최신영화소개</h3>
+	<table>
+		<tr>
+			<td> <img class="zoom round" id="image"  src="movie1.jpg" width=400 height=400 onclick="change()"> </td>
+			<td>
+				<table id="grid">
+					<tr>
+						<td>
+							<a href=https://movie.naver.com/movie/bi/mi/basic.naver?code=198319> <img src="movie1.jpg" width=30> </a>
+						</td>
+						<td> 우리가 말하지 않은 것 </td>
+					</tr>
+					<tr>
+						<td>
+							<a href=https://movie.naver.com/movie/bi/mi/basic.naver?code=193324> <img src="movie2.jpg" width=30> </a>
+						</td>
+						<td> 리미트 </td>
+					</tr>
+					<tr>
+						<td>
+							<a href=https://movie.naver.com/movie/bi/mi/basic.naver?code=213415> <img src="movie3.jpg" width=30> </a>
+						</td>
+						<td> 시맨틱 에러: 더 무비 </td>
+					</tr>
+					<tr>
+						<td>
+							<a href=https://movie.naver.com/movie/bi/mi/basic.naver?code=213454> <img src="movie4.jpg" width=30> </a>
+						</td>
+						<td> 락다운 213주 </td>
+					</tr>
+					<tr>
+						<td>
+							<a href=https://movie.naver.com/movie/bi/mi/basic.naver?code=207924> <img src="movie5.jpg" width=30> </a>
+						</td>
+						<td> 썬다운 </td>
+					</tr>
+					<tr>
+						<td>
+							<a href=https://movie.naver.com/movie/bi/mi/basic.naver?code=213548> <img src="movie6.jpg" width=30> </a>
+						</td>
+						<td> 노스맨 </td>
+					</tr>
+					<tr>
+						<td>
+							<a href=https://movie.naver.com/movie/bi/mi/basic.naver?code=218444> <img src="movie7.jpg" width=30> </a>
+						</td>
+						<td> 아라시 20주년 투어 콘서트 5X20 </td>
+					</tr>
+					<tr>
+						<td>
+							<a href=https://movie.naver.com/movie/bi/mi/basic.naver?code=208463> <img src="movie8.jpg" width=30> </a>
+						</td>
+						<td> K클래식 제너레이션</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table> Address : 경기도 용인시 기흥구 강남로 40(구갈동) 우(16979), 대표전화 : 031-280-3114, 031-280-3500, 팩스번호 : 031-280-3173 
+	</div>
+</body>	
+</html>
