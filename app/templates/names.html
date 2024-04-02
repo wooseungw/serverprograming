@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <!-- content="width=device-width, initial-scale=1.0" 자동으로 너비설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week2 Document</title>
+</head>
+{% if name %}
+<body>
+    <img src="/static/0.png" width=50   >
+    <h1>Hello {{ name }}!</h1>
+    <h2>Hello {{ name }}!</h2>
+    <h3>Hello {{ name }}!</h3>
+</body>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
