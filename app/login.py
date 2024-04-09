@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/loginform')
 def loginform():
     html = """
-        <form action="/login">
+        <form action="/login" method="post">
             <input type="id" name="userid" /><br>
             <input type="password" name="password" />
             <input type="submit" value="로그인">
@@ -16,8 +16,12 @@ def loginform():
 
 @app.route('/login')
 def login():
-    userid = request.args.get('userid','None')
-    password = request.args.get('password','None')
+    #get방식
+    #userid = request.args.get('userid','None')
+    #password = request.args.get('password','None')
+    #form방식
+    userid = request.form.get('userid','None')
+    password = request.form.get('password','None')
     if userid == password:
         return "로그인 성공"
     else:
