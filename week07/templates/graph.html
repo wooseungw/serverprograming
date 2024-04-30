@@ -1,0 +1,22 @@
+그래프 </br>
+
+
+{% for s in scores %}
+{{ s.name }} 성적<br/>
+<table>
+    <tr>
+        <td>국어</td>
+        <td><div style="background-color:red;width:{{s.score[0]}}px">{{s.score[0]}}</div></td>
+    </tr>
+    <tr>
+        <td>영어</td>
+        <td><div style="background-color:yellow;width:{{s.score[1]}}px">{{s.score[1]}}</div></td>
+    </tr>
+    <tr>
+        <td>수학</td>
+        <td><div style="background-color:gray;width:{{s.score[2]}}px">{{s.score[2]}}</div></td>
+    </tr>
+
+</table>
+{% endfor %}
+

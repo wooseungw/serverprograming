@@ -1,0 +1,16 @@
+
+
+
+영화 설문 조사
+
+{% for s in surveys %}
+<div>
+{{loop.index}}.제목  {{ s }} <br/>
+
+<input type="radio" name="q{{loop.index}}"/> 아주만족 
+<input type="radio" name="q{{loop.index}}"/> 만족
+<input type="radio" name="q{{loop.index}}"/> 불만족
+<input type="radio" name="q{{loop.index}}"/> 매우불만족
+
+</div>
+{% endfor %}

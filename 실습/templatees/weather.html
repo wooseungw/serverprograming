@@ -1,0 +1,12 @@
+
+<form action="weatheradd">
+    <input type="text" name="city"/>
+    <input type="submit" value="add"/>
+</form>
+
+{% for c in cities %}
+<a href="https://search.naver.com/search.naver?where=nexearch&query={{c}}날씨">{{c}} </a>
+<a href="/weatherdel?city={{c}}"><img src="/static/del.png" width="16" height="16"></a>
+<br/>
+{% endfor %}
+도시 : {{cities | length}} 개

@@ -1,0 +1,9 @@
+<body>
+    <form action="/result" method="post">
+        
+        {%for q in questions %}
+        <input type="checkbox" name="vehicle1" value="Bike"> {{q}}<br>
+        {%endfor%}
+        <input type="submit" value="Submit">
+    </form>
+</body>

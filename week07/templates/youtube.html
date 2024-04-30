@@ -1,0 +1,20 @@
+youtube downloader <br/>
+
+https://www.youtube.com/watch?v=jYluHLnugFU <br/>
+https://www.youtube.com/watch?v=7QfcBOnEQR8 <br/>
+<form action="/youtubeadd">
+    <input type="text" name="url" size="70" value="https://www.youtube.com/watch?v=jYluHLnugFU" />
+    <input type="checkbox" name="mp3" > mp3
+    <input type="submit" value="다운로드"/>    
+</form>
+
+{% for yt in urls %}
+제목 <a href="{{yt.url}}">{{yt.title}} </a><br/>
+길이 {{yt.length}} <br/>
+설명 {{yt.description}} <br/>
+<img src={{yt.thumbnail}} width=150 /><br/>
+<a href="/static/{{yt.mp4}}">다운로드(mp4)</a>    
+{% if yt.mp3 != "" %}<a href="/static/{{yt.mp3}}">다운로드(mp3)</a>  {% endif %}
+
+<br/>
+{% endfor %}
